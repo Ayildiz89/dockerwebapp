@@ -22,6 +22,6 @@ response.writeHeader(200,{'Context-Type':'text-plain'});
 response.write('<html><body><h1>Kod Denemeleri</h1></body></html>');
 response.end();
 }
-http.createServer(benimFonksiyonum).listen(8080);
+http.createServer(benimFonksiyonum).listen(49160);
 console.log('Sunucu Calisiyor');
 
