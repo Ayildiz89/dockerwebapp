@@ -14,3 +14,14 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
+
+var http=require('http');
+function benimFonksiyonum(requiest,response) {
+console.log(requiest)
+response.writeHeader(200,{'Context-Type':'text-plain'});
+response.write('<html><body><h1>Kod Denemeleri</h1></body></html>');
+response.end();
+}
+http.createServer(benimFonksiyonum).listen(8002);
+console.log('Sunucu Calisiyor');
+
