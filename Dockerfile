@@ -15,7 +15,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
-CMD [ "node", "server.js" ]
+
 EXPOSE 8005
 CMD [ "node", "server2.js" ]
